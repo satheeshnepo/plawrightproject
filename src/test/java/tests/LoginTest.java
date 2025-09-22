@@ -17,5 +17,13 @@ public class LoginTest extends BaseTest {
             Assert.assertNotEquals(toast_message.trim(), message);
         }
     }
+
+    @Test(dataProvider = "getDummyData",dataProviderClass = DataReader.class)
+    public void loginTestWithValid() throws Exception{
+        loginPage.login("satheeshnepo@gmail.com","123");
+        }
+    }
+
+
 }
 

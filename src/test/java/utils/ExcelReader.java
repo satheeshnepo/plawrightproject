@@ -70,6 +70,7 @@ public class ExcelReader {
             while (cell.hasNext()) {
                 cellCount = cellCount + 1;
                 cell.next();
+
             }
             break;
         }
